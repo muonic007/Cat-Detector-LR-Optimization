@@ -3,11 +3,11 @@ import h5py
 
 def load_dataset():
     """Load the Cat vs Non-Cat dataset from HDF5 files"""
-    train_dataset = h5py.File("E:/taha/train_catvnoncat.h5", "r")
+    train_dataset = h5py.File("train_catvnoncat.h5", "r")
     train_set_x_orig = np.array(train_dataset["train_set_x"][:])
     train_set_y_orig = np.array(train_dataset["train_set_y"][:])
 
-    test_dataset = h5py.File("E:/taha/test_catvnoncat.h5", "r")
+    test_dataset = h5py.File("test_catvnoncat.h5", "r")
     test_set_x_orig = np.array(test_dataset["test_set_x"][:])
     test_set_y_orig = np.array(test_dataset["test_set_y"][:])
 
